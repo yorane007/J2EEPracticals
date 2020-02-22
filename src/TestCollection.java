@@ -27,7 +27,7 @@ class TestThread
 {
 	class Mytask implements Runnable
 	{
-		int x = 10;
+		int x = 20;
 		public void run()
 		{
 			long id = Thread.currentThread().getId();
