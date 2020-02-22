@@ -40,10 +40,17 @@ class TestThread
 	
 		Thread t1 = new Thread(m);
 		Thread t2 = new Thread(m);
+		Thread t3 = new Thread(new Runnable() {
+			public void run() {
+				long id = Thread.currentThread().getId();
+				System.out.println("Mthread id "+ id + "running with method local paramterized anonymous class");
+				
+			}
+		});
 		
 		t1.start();
 		t2.start();
-		
+		t3.start();
 	}
 	
 
