@@ -19,6 +19,7 @@ public class TestCollection {
 			System.out.println(row);
 	}
 */
+		Btree tree = new Btree();
 		new TestThread().testScenario_1();
 }
 }
